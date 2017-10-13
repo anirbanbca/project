@@ -1,0 +1,22 @@
+#date
+{
+	position: absolute;
+	margin-top:0px;
+	color:blue;
+	font-size:40px;
+	border:5px dashed red;
+	padding:10px;
+	width:300px;
+	margin-left:0px;
+}
+#time
+{
+	position:absolute;
+	margin-top:150px;
+	font-size:50px;
+	color:blue;
+	border:5px dashed red;
+	padding:10px;
+	width:200px;
+	margin-left:10px;
+}

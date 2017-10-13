@@ -1,0 +1,83 @@
+<HTML>
+<HEAD>
+
+<link rel="stylesheet" type="text/css" href="css/css3clock.css" />
+<link rel="stylesheet" type="text/css" href="clock_style.css">
+  <script type="text/javascript">
+    window.onload = setInterval(clock,1000);
+
+    function clock()
+    {
+	  var d = new Date();
+	  
+	  var date = d.getDate();
+	  
+	  var month = d.getMonth();
+	  var montharr =["Jan","Feb","Mar","April","May","June","July","Aug","Sep","Oct","Nov","Dec"];
+	  month=montharr[month];
+	  
+	  var year = d.getFullYear();
+	  
+	  var day = d.getDay();
+	  var dayarr =["Sun","Mon","Tues","Wed","Thurs","Fri","Sat"];
+	  day=dayarr[day];
+	  
+	  var hour =d.getHours();
+      var min = d.getMinutes();
+	  var sec = d.getSeconds();
+	
+	  document.getElementById("date").innerHTML=day+" "+date+" "+month+" "+year;
+	  document.getElementById("time").innerHTML=hour+":"+min+":"+sec;
+    }
+  </script>
+<style type="text/css">
+input{
+     
+     width:100px;
+      height:50px;
+      color:red;
+      left:100px;
+background-color:yellow;
+}
+div{
+position:absolute;
+     
+    left:80%;
+    top:65%;
+    color:blue;
+}
+</style>
+<TITLE>
+STUDENT ATTENDANCE SYSTEM
+</TITLE>
+<BODY BGCOLOR="lightgreen">
+<MARQUEE BEHAVIOUR="ALTERNATE"><H1>BRAINWARE UNIVERSITY</H1></MARQUEE>
+<br>
+
+ 
+   <p id="date"></p>
+   <p id="time"></p>
+
+<center><img src="bb.jpg" height="200" width="450"></center>
+<CENTER>
+<H1><U>STUDENT FORUM</U></H1>
+<H3><U>LOGIN FORUM</U></H3>
+</CENTER>
+<hr/>
+
+<br>
+
+<a href="student.html"><input type="button" value="student"></a>
+<a href="admin.html"><input type="button" value="admin"></a>
+<a href="faculty.html"><input type="button" value="faculty"></a>
+<div><b>ABOUT US</b></div>
+
+<hr/>
+
+</BODY>
+</HTML>
+
+
+
+
+ 
